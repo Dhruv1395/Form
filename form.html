@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+         }
+         .box{
+            height: 820px;
+            width: 480px;
+            border: 3px solid black;
+            margin: 10% auto;
+            border-radius: 25px;
+            box-shadow: 1px 2px 25px black;
+           
+         }
+        
+        .details{
+        margin: 15px;
+        
+     }
+     
+       input{
+        margin: 10px 10px;
+        font-size: 18px;
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 5px;
+     }
+    
+       select{
+        margin: 10px;
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 5px;
+        
+       }
+      
+       .reset{
+        margin: 2px auto;
+        margin-left: 34%;
+        width: 30%;
+        padding: 8px;
+        font-size: 20px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        font-weight: bold;
+        background-color: gray;
+       }
+      button{
+        margin: 8px;
+        margin-left: 23%;
+        width: 53%;
+        padding: 8px;
+        font-size: 20px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        font-weight: bold;
+        background-color:gray;
+      }
+      .submit:hover{
+        background-color: black;
+        color: white;
+      }
+      .reset:hover{
+        background-color: black;
+        color: white;
+      }
+      
+       input[type="number"]::-webkit-inner-spin-button{
+        display: none;
+       }
+       textarea{
+        border: 2px solid black;
+        border-radius: 5px;
+       }
+       
+        
+       
+       
+    </style>
+</head>
+<body>
+<div class="box">
+        
+            <div class="details">
+    <form>
+     <table> 
+        
+        <tr>
+            <td> Your name :</td>
+            <td><input type="text" id="name" 
+                ></td>
+        </tr>
+    
+        <tr>
+            <td>Enter your Father name:</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Enter your Mother name:</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Enter your 12<sup>th</sup> % :</td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <td>Enter your Adhhar no :</td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <td>yearly Income :</td>
+            <td>
+                <select name="income">
+                     <option value="income">Less ₹100,000</option>
+                     <option value="income">₹100,000 - ₹200,000</option>
+                     <option value="income">₹200,000 - ₹500,000</option>
+                     <option value="income">More ₹500,000</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td> Date of birth :</td>
+            <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <td> Gender :</td>
+            <td>
+                <input type="radio" name="Gender" value="male">Male
+                <input type="radio" name="Gender" value="fe-male">Fe-male
+            
+            </td>
+        </tr>
+
+        <tr>
+            <td>Select Course :</td>
+            <td>
+                <select name="Course">
+                    <option value="BCA">BCA</option>
+                    <option value="B.SC(IT)">B.SC(IT)</option>
+                    <option value="B.TECH">B.TECH</option>
+                    <option value="MCA">MCA</option>
+                  </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Phone number :</td>
+            <td><input type="number" inputmode="numeric"></td>
+        </tr>
+
+        <tr>
+            <td>E-mail :</td>
+            <td><input type="email"></td>
+        </tr>
+
+        <tr>
+            <td>Enter your Address :</td>
+            <td><textarea cols="30" rows="3" value="Address"></textarea></td>
+        </tr>
+
+       
+
+</table> 
+<hr>
+           <input type="reset" class="reset"> 
+
+        </form>
+
+        <hr>
+
+        <button type="submit" class="submit" onclick="submit()">submit</button>
+</div>
+
+
+    </div>
+
+    <script>
+        function submit(){
+            var name = document.getElementById("name").value;
+            alert("congratulation!💐" + name + "\n\t your form submit successfully!");
+        }
+       
+    </script>
+
+</body>
+</html>
